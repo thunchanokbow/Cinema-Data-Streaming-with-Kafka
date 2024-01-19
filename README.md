@@ -1,4 +1,4 @@
-# Cinema-Data-Streaming-with-Kafka
+# Cinema Data Streaming with Kafka
 
 Build a data synchronization system between databases with **Kafka** that implements **change data capture (CDC)** to ingest binlogs from the source database, process them, and write them to the target database correctly, completely, and instantly in real time.
 
@@ -12,8 +12,9 @@ Build a data synchronization system between databases with **Kafka** that implem
 
 [Compute Engine](sections/01-cloud-sql-for-mysql-database.md).<br>
 - [Create VM Instances](sections/01-cloud-sql-for-mysql-database.md).<br>
-- [Install Git on a new VM](sections/01-cloud-sql-for-mysql-database.md).<br>
+- [Install Git and Docker on a new VM](sections/01-cloud-sql-for-mysql-database.md).<br>
 - [Upload YAML files to VM ](sections/01-cloud-sql-for-mysql-database.md).<br>
+- [Get Confluent Control Center](sections/01-cloud-sql-for-mysql-database.md).<br>
 
 [Connect Debezium to Cloud SQL for MySQL](sections/01-cloud-sql-for-mysql-database.md).<br>
 
