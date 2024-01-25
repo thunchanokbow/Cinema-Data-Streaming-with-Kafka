@@ -8,7 +8,7 @@
     "database.password": "kafka-db-001",
     "database.server.name": "kafka-db-001",
     "table.whitelist": "demo.movies",
-    "database.history.kafka.bootstrap.servers": "broker:29092",
+    "database.history.kafka.bootstrap.servers": "broker:9092",
     "database.history.kafka.topic": "movies",
     "decimal.handling.mode": "double",
     "include.schema.changes": "true",
