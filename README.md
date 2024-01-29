@@ -16,5 +16,7 @@ Build a data synchronization system between databases with **Kafka** that implem
 - [Upload YAML files to VM ](sections/01-cloud-sql-for-mysql-database.md).<br>
 - [Get Confluent Control Center](sections/01-cloud-sql-for-mysql-database.md).<br>
 
-[Connect Debezium to Cloud SQL for MySQL](sections/01-cloud-sql-for-mysql-database.md).<br>
+[Connect Debezium connector to Cloud SQL for MySQL](sections/01-cloud-sql-for-mysql-database.md).<br>
+[Connect JDBC sink connector to CloudSQL for MySQL](sections/01-cloud-sql-for-mysql-database.md).<br>
+
 
