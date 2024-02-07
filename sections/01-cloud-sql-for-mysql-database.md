@@ -3,7 +3,7 @@
 Cloud SQL is a fully managed relational database service for MySQL, PostgreSQL, and SQL Server. This frees you from database administration tasks so that you have more time to manage your data.
 
 - [Hosting MySQL on Cloud SQL](01-cloud-sql-for-mysql-database.md#).<br>
-- [Connect via DBeaver](01-cloud-sql-for-mysql-database.md#).<br>
+- [Connect via DBeaver](01-cloud-sql-for-mysql-database.md#Connect-via-DBeaver).<br> 
 
 ![0](/images/02.png)
 
@@ -30,3 +30,24 @@ To create a Cloud SQL for MySQL instance, follow these steps:
 - Enter the **public IPv4 address** or **address range** from which you want to allow connections.
 - Click **Done**.
 - Click **Save**.
+
+For more information about create a Cloud SQL for MySQL instance.[Here](https://cloud.google.com/sql/docs/mysql/create-instance)
+
+## Connect via DBeaver
+
+![0](/images/05.png)
+
+To connect via DBeaver, follow these steps:
+1. From the SQL navigation menu, select **Overview**.
+2. Scroll down to the **Connect to this instance** and copy the **Public IP address**.
+
+![0](/images/06.png)
+
+3. Open **DBeaver**, select **MySQL** database.
+4. Click **Next**.
+5. On **MySQL connection settings** page, enter **Public IP address** of the Cloud SQL for MySQL.
+6. In the **Port** field, enter **3306**.
+7. Enter **Username** and **Password**.
+8. Click **Finish**.
+
+For more information about DBeaver.[Here](https://dbeaver.com/docs/dbeaver/GCP-Credentials/)
