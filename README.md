@@ -11,14 +11,14 @@ Build a data synchronization system between databases with **Kafka** that implem
 - [Connect via DBeaver](sections/01-cloud-sql-for-mysql-database.md#Connect-via-DBeaver).<br>
 
 [Compute Engine](sections/02-compute-engine.md).<br> 
-- [Create VM Instances](sections/02-compute-engine.md).<br>
-- [Install Git and Docker on a new VM](sections/02-compute-engine.md).<br>
-- [Upload YAML files to VM ](sections/02-compute-engine.md).<br>
-- [Get Confluent Control Center](sections/02-compute-engine.md).<br>
+- [Create VM Instances](sections/02-compute-engine.md#Create-VM-Instances).<br> 
+- [Install Git and Docker on a new VM](sections/02-compute-engine.md#Install-Git-and-Docker-on-a-new-VM).<br>
+- [Upload YAML files to VM ](sections/02-compute-engine.md#Upload-YAML-files-to-VM).<br>
+- [Get Confluent Control Center](sections/02-compute-engine.md#Get-Confluent-Control-Center).<br>
 
-[Connect Debezium connector to Cloud SQL for MySQL](sections/02-compute-engine.md).<br>
-[Connect JDBC sink connector to CloudSQL for MySQL](sections/02-compute-engine.md).<br>
-- [How to fix error message "No suitable driver found"](sections/02-compute-engine.md)<br>
+[Connect Debezium connector to Cloud SQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md).<br> 
+[Connect JDBC sink connector to CloudSQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md).<br>
+- [How to fix error message "No suitable driver found"](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md)<br>
 
 
 

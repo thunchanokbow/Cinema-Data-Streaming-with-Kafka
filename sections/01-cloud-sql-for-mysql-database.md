@@ -17,8 +17,8 @@ To create a Cloud SQL for MySQL instance, follow these steps:
 3. On the **Choose your database engine** panel of the **Create an instance** page, click **Choose MySQL**.
 4. Enter an **ID** for your instance.
 5. Set a password for the **root** user.
-6. Select the **database version** for your instance: MySQL 5.7.
-7. In the **Choose region and zonal availability** section, select the region and zone for your instance: asia-east2 (it will use composer in HongKong).
+6. Select the **database version** for your instance: **MySQL 5.7**.
+7. In the **Choose region and zonal availability** section, select the region and zone for your instance: **asia-east2** (it will use composer in HongKong).
 ![0](/images/04.png)
 
 8. Authorized **networks** settings for connecting to Cloud SQL instances that use **IP addresses**.
@@ -33,16 +33,15 @@ To create a Cloud SQL for MySQL instance, follow these steps:
 
 For more information about create a Cloud SQL for MySQL instance.[Here](https://cloud.google.com/sql/docs/mysql/create-instance)
 
+![0](/images/05.png)
+
 ## Connect via DBeaver
 
-![0](/images/05.png)
+![0](/images/06.png)
 
 To connect via DBeaver, follow these steps:
 1. From the SQL navigation menu, select **Overview**.
 2. Scroll down to the **Connect to this instance** and copy the **Public IP address**.
-
-![0](/images/06.png)
-
 3. Open **DBeaver**, select **MySQL** database.
 4. Click **Next**.
 5. On **MySQL connection settings** page, enter **Public IP address** of the Cloud SQL for MySQL.
