@@ -17,8 +17,8 @@ To create a Cloud SQL for MySQL instance, follow these steps:
 3. On the **Choose your database engine** panel of the **Create an instance** page, click **Choose MySQL**.
 4. Enter an **ID** for your instance.
 5. Set a password for the **root** user.
-6. Select the **database version** for your instance: MySQL 5.7.
-7. In the **Choose region and zonal availability** section, select the region and zone for your instance: asia-east2 (it will use composer in HongKong).
+6. Select the **database version** for your instance: **MySQL 5.7**.
+7. In the **Choose region and zonal availability** section, select the region and zone for your instance: **asia-east2** (it will use composer in HongKong).
 ![0](/images/04.png)
 
 8. Authorized **networks** settings for connecting to Cloud SQL instances that use **IP addresses**.
