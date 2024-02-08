@@ -16,9 +16,9 @@ Build a data synchronization system between databases with **Kafka** that implem
 - [Upload YAML files to VM ](sections/02-compute-engine.md#Upload-YAML-files-to-VM).<br>
 - [Get Confluent Control Center](sections/02-compute-engine.md#Get-Confluent-Control-Center).<br>
 
-[Connect Debezium connector to Cloud SQL for MySQL](sections/02-compute-engine.md).<br>
-[Connect JDBC sink connector to CloudSQL for MySQL](sections/02-compute-engine.md).<br>
-- [How to fix error message "No suitable driver found"](sections/02-compute-engine.md)<br>
+[Connect Debezium connector to Cloud SQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md).<br> 
+[Connect JDBC sink connector to CloudSQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md).<br>
+- [How to fix error message "No suitable driver found"](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md)<br>
 
 
 
