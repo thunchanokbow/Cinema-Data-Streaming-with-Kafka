@@ -2,10 +2,10 @@
 
 Compute Engine is a computing and hosting service that lets you **create and run virtual machines** on Google infrastructure. 
 
-- [Create VM Instances](sections/02-compute-engine.md#Create-VM-Instances).<br> 
-- [Install Git and Docker on a new VM](sections/02-compute-engine.md#Install-Git-and-Docker-on-a-new-VM).<br>
-- [Upload YAML files to VM ](sections/02-compute-engine.md#Upload-YAML-files-to-VM).<br>
-- [Get Confluent Control Center](sections/02-compute-engine.md#Get-Confluent-Control-Center).<br>
+- [Create VM Instances](02-compute-engine.md#Create-VM-Instances).<br> 
+- [Install Git and Docker on a new VM](02-compute-engine.md#Install-Git-and-Docker-on-a-new-VM).<br>
+- [Upload YAML files to VM ](02-compute-engine.md#Upload-YAML-files-to-VM).<br>
+- [Get Confluent Control Center](02-compute-engine.md#Get-Confluent-Control-Center).<br>
 
 ![0](/images/07.png)
 
