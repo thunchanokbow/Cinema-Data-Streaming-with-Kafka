@@ -3,9 +3,9 @@
 Compute Engine is a computing and hosting service that lets you **create and run virtual machines** on Google infrastructure. 
 
 - [Create VM Instances](sections/02-compute-engine.md#Create-VM-Instances).<br> 
-- [Install Git and Docker on a new VM](sections/02-compute-engine.md).<br>
-- [Upload YAML files to VM ](sections/02-compute-engine.md).<br>
-- [Get Confluent Control Center](sections/02-compute-engine.md).<br>
+- [Install Git and Docker on a new VM](sections/02-compute-engine.md#Install-Git-and-Docker-on-a-new-VM).<br>
+- [Upload YAML files to VM ](sections/02-compute-engine.md#Upload-YAML-files-to-VM).<br>
+- [Get Confluent Control Center](sections/02-compute-engine.md#Get-Confluent-Control-Center).<br>
 
 ![0](/images/07.png)
 
@@ -52,4 +52,118 @@ For more information about create VPC firewall rules.[Here](https://cloud.google
 - Click **Done**.
 - Click **Save**.
    
-## Install Git and Docker on a new VM
+![0](/images/11.png)
+
+## Install Git and Docker on a new VM. 
+
+### Check that this step has been completed before STAR
+- JSON files configuration: **mysql-source.json, mysql-sink-kafka.json**. 
+- Github Repository.
+- Docker-compose file.
+- Connetors including **JDBC MySQL driver**.
+
+#### mysql-source.json
+
+```
+{
+  "name": "mysql-source-kafka",
+  "config": {
+    "connector.class": "io.debezium.connector.mysql.MySqlConnector",
+    "database.hostname": "PUBLIC_IP_ADDRESS",
+    "database.port": "3306",
+    "database.user": "root",
+    "database.password": "PASSWORD",
+    "database.server.name": "SERVER_NAME",
+    "table.whitelist": "demo.movies",
+    "database.history.kafka.bootstrap.servers": "broker:9092",
+    "database.history.kafka.topic": "movies",
+    "decimal.handling.mode": "double",
+    "include.schema.changes": "true",
+    "key.converter": "io.confluent.connect.avro.AvroConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schema.registry.url": "http://schema-registry:8081"
+  }
+}
+```
+
+#### mysql-sink-kafka.json
+
+```
+{
+    "name": "mysql-sink-kafka",
+    "config": {
+      "connector.class": "io.confluent.connect.jdbc.JdbcSinkConnector",
+      "task.max": "1",
+      "topics": "SERVER_NAME.demo.movies",
+      "key.converter": "io.confluent.connect.avro.AvroConverter",
+      "value.converter": "io.confluent.connect.avro.AvroConverter",
+      "key.converter.schema.registry.url": "http://schema-registry:8081",
+      "value.converter.schema.registry.url": "http://schema-registry:8081",
+      "transforms": "unwrap",
+      "transforms.unwrap.type": "io.debezium.transforms.ExtractNewRecordState",
+      "transforms.unwrap.drop.tombstones": "false",
+      "key.converter.schemas.enable": "true",
+      "errors.tolerance": "all",
+      "errors.log.include.messages": true,
+      "connection.attempts": "6",
+      "connection.backoff.ms": "1000",
+      "connection.url": "jdbc:mysql://PUBLIC_IP_ADDRESS:3306/demo?nullCatalogMeansCurrent=true&autoReconnect=true&useSSL=false",
+      "connection.user": "root",
+      "connection.password": "PASSWORD",
+      "dialect.name": "MySqlDatabaseDialect",
+      "insert.mode": "upsert",
+      "delete.enabled" : "true",
+      "batch.size": "2",
+      "table.name.format": "movies",
+      "table.whitelist": "demo.movies",
+      "pk.mode": "record_key",
+      "pk.fields": "movie_id",
+      "auto.create": "true",
+      "auto.evolve": "true",
+      "db.timezone": "Asia/Bangkok"
+    }
+  }
+
+```
+![0](/images/07.png)
+
+To intstall Git and Docker, follow these steps: 
+1. Go to the **Compute Engine** page, click **SSH**.
+2. Install **Git** on Cumpute Engine.
+```
+sudo apt-get install git
+```
+3. Install **Docker Product** on Compute Engine.
+```
+curl -fsSL https://get.docker.com | sh
+```
+4. Install **Docker Compose** on Compute Engine.
+```
+sudo apt-get install docker-compose
+```
+
+## Upload YAML files to VM. 
+To upload files to VM Compute Engine, follow these steps:
+1. Open the Github repository.
+2. Click the **Clone** button.
+3. Copy the provided **HTTPS**, which typically starts with `https://`.
+4. Clone **Github Repository** to VM Compute Engine using **SSH**.
+```
+git clone <HTTPS_Links>
+```
+
+![0](/images/12.png)
+
+## Get Confluent Control Center. 
+To get confluent control center, follow these steps:
+1. Running the `docker-compose.yml`.
+```
+sudo docker compose up -d
+```
+2. To list all docker containers.
+```
+sudo docker ps -a
+```
+3. Go to the **Compute Engine** page, copy **External IP Address**.
+4. Enter **External IP Address** and **Control Center port** in address bar : `35.220.210.38:9021` 
