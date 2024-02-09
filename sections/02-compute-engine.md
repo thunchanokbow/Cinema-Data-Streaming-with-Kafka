@@ -58,8 +58,8 @@ For more information about create VPC firewall rules.[Here](https://cloud.google
 
 ### Check that this step has been completed before STAR
 - JSON files configuration: **mysql-source.json, mysql-sink-kafka.json**. 
-- Github Repository.
-- Docker-compose file.
+- Github Repository [HTTPS](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka.git).
+- Docker-compose [file](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka/blob/kafka/docker-compose.yml).
 - Connetors including **JDBC MySQL driver**.
 
 #### mysql-source.json
