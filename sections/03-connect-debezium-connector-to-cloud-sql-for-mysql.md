@@ -48,10 +48,10 @@ curl -i -X POST -H "Accept: application/json" -H "Content-Type: application/json
 ![0](/images/18.png)
 
 Once you start the JDBC sink connector, it will automatically begin streaming data from the source database to the destination database.
-For more information about JDBC drivers.[Here](https://docs.confluent.io/kafka-connectors/jdbc/current/jdbc-drivers.html)
+For more information about JDBC drivers.[Here](https://docs.confluent.io/kafka-connectors/jdbc/current/jdbc-drivers.html)<br>
 
 
-# How to fix error message "No suitable driver found"
+## How to fix error message "No suitable driver found"
 
 If the JDBC sink connector is still **not working** and there is no **mysql-sink-kafka** on the **Confluent page** in connect list, it might be because the driver is installed incorrectly or the path is wrong.
 
