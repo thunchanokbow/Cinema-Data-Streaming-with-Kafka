@@ -5,7 +5,7 @@ Build a data synchronization system between databases with **Kafka** that implem
 ## Project Overview
 ![0](/images/01.png)
 
-## Contents (Coming Soon)
+## Contents 
 [Cloud SQL for MySQL database](sections/01-cloud-sql-for-mysql-database.md).<br>
 - [Hosting MySQL on Cloud SQL](sections/01-cloud-sql-for-mysql-database.md#Hosting-MySQL-on-Cloud-SQL).<br> 
 - [Connect via DBeaver](sections/01-cloud-sql-for-mysql-database.md#Connect-via-DBeaver).<br>
