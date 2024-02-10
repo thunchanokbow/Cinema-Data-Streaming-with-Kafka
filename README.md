@@ -18,7 +18,7 @@ Build a data synchronization system between databases with **Kafka** that implem
 
 [Connect Debezium connector to Cloud SQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md#Connect-Debezium-connector-to-Cloud-SQL-for-MySQL).  
 [Connect JDBC sink connector to CloudSQL for MySQL](sections/03-connect-debezium-connector-to-cloud-sql-for-mysql.md#Connect-JDBC-sink-connector-to-CloudSQL-for-MySQL).<br> 
-- [How to fix error message "No suitable driver found"](sections/0-error.md)<br> 
+- [How to fix error message "No suitable driver found"](sections/0-error.md#Connect-JDBC-sink-connector-to-CloudSQL-for-MySQL)<br> 
 
 
 
