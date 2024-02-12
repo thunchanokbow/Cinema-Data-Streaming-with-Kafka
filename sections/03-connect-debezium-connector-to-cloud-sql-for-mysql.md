@@ -82,7 +82,7 @@ ls -l /usr/share/confluent-hub-components/confluentinc-kafka-connect-jdbc
 5. There should be a `mysql-connector-java-8.0.13.jar` in the directory like this example.
 ![0](/images/19.png)
 
-6. Add volume configuration to `docker-compose.yml` like this. 
+6. **Add volume** configuration to `docker-compose.yml` like this.
 ```
   connect:
     image: cnfldemos/cp-server-connect-datagen:0.5.3-7.1.0
@@ -134,3 +134,5 @@ ls -l /usr/share/confluent-hub-components/confluentinc-kafka-connect-jdbc
       - ./mysql-connector-java-8.0.13.jar:/usr/share/confluent-hub-components/confluentinc-kafka-connect-jdbc/mysql-connector-java-8.0.13.jar
 
 ```
+7. Make sure that the **JDBC driver** `mysql-connector-java-8.0.13.jar` is available for docker compose in the current path.
+![0](/images/20.png)
