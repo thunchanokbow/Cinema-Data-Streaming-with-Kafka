@@ -22,6 +22,7 @@ To create and start a VM instance, follow these steps:
 6. In the **Boot disk** section, click **CHANGE**: Size `300 GB`.
 7. In the **Identity and API Access** section, select **Allow full access to all Cloud APIs**.
 8. In the **Firewall** section, select all.
+
 For more information about create and start a VM instance.[Here](https://cloud.google.com/compute/docs/instances/create-start-instance)
 
 ![0](/images/09.png)
@@ -56,7 +57,7 @@ For more information about create VPC firewall rules.[Here](https://cloud.google
 
 ## Install Git and Docker on a new VM. 
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - JSON files configuration: **mysql-source.json, mysql-sink-kafka.json**. 
 - Github Repository [HTTPS](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka.git).
 - Docker-compose [file](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka/blob/kafka/docker-compose.yml).
