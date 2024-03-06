@@ -2,7 +2,7 @@
 
 ![0](/images/13.png)
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - JSON [files](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka/blob/main/mysql-source.json) configuration: **mysql-source.json**   
 - Github Repository [HTTPS](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka.git).
 - Docker-compose [file](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka/blob/kafka/docker-compose.yml).
@@ -30,7 +30,7 @@ Once the **source connector** is up and running, you will see the **topic** disp
 
 ![0](/images/16.png)
 
-### Check that this step has been completed before STAR
+### Check that this step has been completed before START
 - JSON [files](https://github.com/thunchanokbow/Cinema-Data-Streaming-with-Kafka/blob/main/mysql-sink-kafka.json) configuration: **mysql-sink-kafka.json**
 - Run docker compose on VM Compute Engine.
 - Setting VPC firewall rules port.
